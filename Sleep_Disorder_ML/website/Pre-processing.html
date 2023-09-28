@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" type = "image/png" href = "images/newFav.png"> 
+    <title>Sleep like a Baby Again</title>
+
+    <!---Custom css link(s)-->
+    <link rel ="stylesheet" type = "text/css" href = "style.css"> 
+    <!---Icons link(2)-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!---Remixicons-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!---Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header> 
+        <a class = "logo">Sleep like a Baby Again</a>
+        <ul class = "navlist"> 
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "about.html">About</a></li>
+            <li><a href = "impact.html">Impact</a></li>
+            <div class = "dropdown"> 
+                <li><a class = "machine" href = "machinelearning.html">ML</a></li>
+                <div class = "content"> 
+                    <a href = "Pre-processing.html">Pre-Processing</a>
+                    <a href = "Choosingmodel.html">Choosing Model</a>
+                    <a href = "trainingmodel.html">Training Model</a>
+                    <a href = "Evaluate.html">Evaluate Model</a>
+                    <a href = "Prediction.html">Predictions</a>
+                </div>
+            </div>
+            <div class = "dropdown"> 
+                <li><a>Models</a></li>
+                <div class = "content"> 
+                    <a href = "SVC.html">SVC</a>
+                    <a href = "LinearRegression.html">Linear Regression/GBC</a>
+                </div>
+            </div>
+        </ul>
+    </header>
+    
+    
+    <section class="backdrop2"> 
+        <h1 class = "pnh1" > Pre-Processing: </h1>
+        <h2 class = "pnh2"> Pre-Processing is when you take raw data and we transform it into a format that can be understood by the computer and machine learning algorithms.</h2>
+        <h2 class = "pnh2"> Here there are two variations of pre-processing established.</h2>
+        <img class = "Pre" src = "Images/PreP.png"> 
+        <h2 class = "pnh2"> The first step was to find all of the unique blood pressure values and put it in a list to remove duplicates where if a value was in that list, it was 0, and if x was not in that list, it was 1, same for gender, 0 was female, 1 was male.</h2>
+        <h2 class = "pnh2">Then we converted columns to bins to convert continuous data into categorical.</h2>
+        <H2 class = "pnh2"> Finally we used sci-kit learn’s preprocessing label encoder to convert non-numeric data (String or Boolean) into numbers, and removed outliers and missing data.</h2>
+    </section>
+
+</body>
+</html>

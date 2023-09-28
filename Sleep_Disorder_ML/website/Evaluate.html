@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" type = "image/png" href = "images/newFav.png"> 
+    <title>Sleep like a Baby Again</title>
+
+    <!---Custom css link(s)-->
+    <link rel ="stylesheet" type = "text/css" href = "style.css"> 
+    <!---Icons link(2)-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!---Remixicons-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!---Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header> 
+        <a class = "logo">Sleep like a Baby Again</a>
+        <ul class = "navlist"> 
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "about.html">About</a></li>
+            <li><a href = "impact.html">Impact</a></li>
+            <div class = "dropdown"> 
+                <li><a class = "machine" href = "machinelearning.html">ML</a></li>
+                <div class = "content"> 
+                    <a href = "Pre-processing.html">Pre-Processing</a>
+                    <a href = "Choosingmodel.html">Choosing Model</a>
+                    <a href = "trainingmodel.html">Training Model</a>
+                    <a href = "Evaluate.html">Evaluate Model</a>
+                    <a href = "Prediction.html">Predictions</a>
+                </div>
+            </div>
+            <div class = "dropdown"> 
+                <li><a>Models</a></li>
+                <div class = "content"> 
+                    <a href = "SVC.html">SVC</a>
+                    <a href = "LinearRegression.html">Linear Regression/GBC</a>
+                </div>
+            </div>
+        </ul>
+    </header>
+    
+    
+    <section class="backdrop2"> 
+        <h1 class = "enh1"> Evaluating the Model: </h1>
+        <h2 class = "enh2"> The evaluation step of the machine learning process is when there are chosen metrics that are used in order to analyze the performance of our chosen training model </h2>
+        <h2 class = "enh2"> In our evaluation, we used Senstivity Analysis to gauge the performance of the model. </h2>
+        <h2 class = "enh2"> Sensitivity is particularly important in situations where the cost of missing positive instances (false negatives) is high, such as in medical diagnoses. It helps assess the model's ability to correctly identify positive cases, even if it comes at the cost of some false positives.  </h2>
+        <h2 class = "enh2"> A high sensitivity value indicates that the model is effectively capturing positive instances, whereas a low sensitivity value suggests that the model is missing a significant number of positive instances. </h2>
+        <h2 class = "enh2"> Sensitivity should be considered alongside other evaluation metrics like specificity, precision, F1-score, and accuracy to get a comprehensive view of the model's performance. These metrics collectively provide insights into the trade-offs between different types of errors and correct predictions that a model makes. </h2>
+    </section>
+</body>
+</html>
